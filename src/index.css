@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+
+.approval-banner-container {
+    position: relative;
+    overflow: hidden;
+    height: 20px;
+    background-color: black;
+    color: yellow;
+    display: flex;
+    align-items: center;
+  }
+  
+  .approval-banner-text {
+    white-space: nowrap;
+    position: absolute;
+    animation: slideLeftToRight 20s linear infinite;
+  }
+  
+  /* Keyframes for sliding effect */
+  @keyframes slideLeftToRight {
+    0% {
+      left: -25%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+
+ 
