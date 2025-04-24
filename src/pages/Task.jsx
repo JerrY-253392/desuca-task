@@ -28,7 +28,7 @@ const Task = () => {
       } else if (role === "manager") {
         response = await getManager(id);
       } else {
-        response = await getUserDetail(id);
+        response = await getUserDetail();
       }
       console.log("My Details:", response);
       setUser(response.data);
