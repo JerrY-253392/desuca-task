@@ -7,9 +7,9 @@ import ManagerDashboard from "./pages/dashboard/ManagerDashboard";
 import UserDashboard from "./pages/dashboard/UserDashboard";
 import ManageUsers from "./pages/ManageUsers";
 import ProfilePage from "./components/Profile";
-import Task from "./pages/task";
-import ManageTask from "./pages/ManageTask";
-import NotFound from "./pages/registration/NotFound";
+import Task from "./pages/Task";
+import ManageTask from "./pages/ManageTask"
+import NotFound from "./pages/registration/NotFound"
 import { setupAxios } from "./api/config";
 
 function App() {
