@@ -1,12 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Login from "./pages/registration/Login";
-import Signup from "./pages/registration/Signup";
-import VerifyOtp from "./pages/registration/VerifyOtp";
 import DashboardLayout from "./layouts/Dashboard";
 import AdminDashboard from "./pages/dashboard/AdminDashboard";
 import ManagerDashboard from "./pages/dashboard/ManagerDashboard";
-import UserDashboard from "./pages/dashboard/userDashboard";
+import UserDashboard from "./pages/dashboard/UserDashboard";
 import ManageUsers from "./pages/ManageUsers";
 import ProfilePage from "./components/Profile";
 import Task from "./pages/task";
@@ -15,8 +13,6 @@ import NotFound from "./pages/registration/NotFound";
 import { setupAxios } from "./api/config";
 
 function App() {
-
-
   setupAxios();
   return (
     <Routes>
@@ -32,7 +28,7 @@ function App() {
 
       <Route path="/" element={<Login />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/*" element={<NotFound/>} />
+      <Route path="/*" element={<NotFound />} />
     </Routes>
   );
 }
